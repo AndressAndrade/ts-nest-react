@@ -1,0 +1,13 @@
+version: "3"
+services:
+  api-nest:
+    build: server
+    ports:
+      - "3000:3000"
+     
+  app-react:
+    build: web
+    ports:
+      - "3001:3001"
+    depends_on: 
+      - api-nest
