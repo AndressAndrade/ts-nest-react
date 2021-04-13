@@ -9,7 +9,7 @@
 kubectl apply -f nest-api/deploy.yaml
 kubectl apply -f nest-api/service.yaml
 kubectl expose -f nest-api/deploy.yaml
-kubectl port-forward service/nest-api 3000 
+kubectl port-forward service/nest-api 3000
 ```
 
 ### Subir o web em outro terminal
